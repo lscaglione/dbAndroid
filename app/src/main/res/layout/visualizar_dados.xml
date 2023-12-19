@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/visualizarNome"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Nome aqui"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/visualizarIdade"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/visualizarIdade"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Idade aqui"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/visualizarNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/visualizarTime"
+        />
+
+    <TextView
+        android:id="@+id/visualizarTime"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Time aqui"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/visualizarIdade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/visualizarEmail"
+
+        />
+
+    <TextView
+        android:id="@+id/visualizarEmail"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="E-mail aqui"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/visualizarTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/botaoVoltar"
+        />
+
+    <Button
+        android:id="@+id/botaoVoltar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        app:layout_constraintTop_toBottomOf="@id/visualizarEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
